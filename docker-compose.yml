@@ -23,6 +23,7 @@ services:
       - ./nginx-conf:/etc/nginx/conf.d
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
+      - dhparam:/etc/ssl/certs
     depends_on:
       - nodejs
     networks:
@@ -42,7 +43,7 @@ services:
 volumes:
   certbot-etc:
   certbot-var:
-  web-root:
+  dhparam:
     driver: local
     driver_opts:
       type: none
