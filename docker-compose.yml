@@ -45,7 +45,7 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /var/app/angular
+      device: /home/mohamedks2/node/tunrw-app
       o: bind
       
 
