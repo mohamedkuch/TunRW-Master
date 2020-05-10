@@ -45,8 +45,9 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/node/app/angular/
+      device: /home/app/angular/
       o: bind
+      
 
 networks:
   app-network:
