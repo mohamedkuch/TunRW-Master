@@ -12,9 +12,6 @@ services:
       - app-network
 
   webserver:
-    environment: 
-      - MONGO_ATLAS_PW=Ckq8Ve7JLxDnLXCY
-      - JWT_KEY=TunRW_Funcheta_Studio_komos_nikos
     image: nginx:mainline-alpine
     container_name: webserver
     restart: unless-stopped
